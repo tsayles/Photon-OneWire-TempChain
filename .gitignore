@@ -1,0 +1,2 @@
+# ignore compiled bin files generated when flashing firmware
+*.bin
