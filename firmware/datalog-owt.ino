@@ -1,6 +1,13 @@
 /*
-Use this sketch to read the temperature from 1-Wire devices
-you have attached to your Particle device (core, p0, p1, photon, electron)
+Photon-OneWire-TempChain
+by Tom Sayles
+
+Large portions leveraged from
+https://github.com/Hotaman/OneWireSpark.git
+OneWireSpark/firmware/examples/Address_Scanner.ino
+
+This sketch scans for 1-wire temperature devices, reads the temperature
+and publishes the results to the cloud
 
 Temperature is read from: DS18S20, DS18B20, DS1822, DS2438
 
@@ -22,8 +29,8 @@ power it gets more picky about the value.
 */
 
 // Only include One of the following depending on your environment!
-#include "OneWire.h"  // Use this include for the Web IDE:
-// #include "OneWire.h" // Use this include for Particle Dev where everything is in one directory.
+// #include "OneWire/OneWire.h"  // Use this include for the Web IDE:
+#include "OneWire.h" // Use this include for Particle Dev where everything is in one directory.
 
 
 // Comment this out for normal operation
