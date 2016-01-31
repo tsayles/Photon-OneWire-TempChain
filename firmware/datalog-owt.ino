@@ -22,7 +22,7 @@ power it gets more picky about the value.
 */
 
 // Only include One of the following depending on your environment!
-#include "OneWire/OneWire.h"  // Use this include for the Web IDE:
+#include "OneWire.h"  // Use this include for the Web IDE:
 // #include "OneWire.h" // Use this include for Particle Dev where everything is in one directory.
 
 
@@ -55,7 +55,7 @@ void setup() {
   digitalWrite(D5, HIGH);
 }
 
-// up to here, it is the same as the address acanner
+// up to here, it is the same as the address scanner
 // we need a few more variables for this example
 
 void loop(void) {
